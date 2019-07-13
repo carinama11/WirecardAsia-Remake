@@ -1,0 +1,1268 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter:400,400i,700&display=swap");
+.main-banner {
+  -webkit-animation: banner-in 1s;
+          animation: banner-in 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.header-container {
+  opacity: 0;
+  -webkit-animation: header-animate-in 1.4s;
+          animation: header-animate-in 1.4s;
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.about-section h1 {
+  opacity: 0;
+  -webkit-animation: about-section-h1-in 1.4s;
+          animation: about-section-h1-in 1.4s;
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.about-section p {
+  opacity: 0;
+  -webkit-animation: about-section-h1-in 2.4s;
+          animation: about-section-h1-in 2.4s;
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes banner-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes banner-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes header-animate-in {
+  0% {
+    opacity: 0;
+    margin-top: -10rem;
+  }
+  60% {
+    opacity: 1;
+    margin-top: 0rem;
+    background: rgba(128, 128, 128, 0);
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0rem;
+    background: rgba(128, 128, 128, 0.514);
+  }
+}
+
+@keyframes header-animate-in {
+  0% {
+    opacity: 0;
+    margin-top: -10rem;
+  }
+  60% {
+    opacity: 1;
+    margin-top: 0rem;
+    background: rgba(128, 128, 128, 0);
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0rem;
+    background: rgba(128, 128, 128, 0.514);
+  }
+}
+
+@-webkit-keyframes about-section-h1-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes about-section-h1-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header-scroll-in {
+  -webkit-animation: header-scroll-animate-in 1s;
+          animation: header-scroll-animate-in 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.header-scroll-out {
+  -webkit-animation: header-scroll-animate-out 1s;
+          animation: header-scroll-animate-out 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes header-scroll-animate-in {
+  0% {
+    opacity: 1;
+    margin-top: -10rem;
+    background: rgba(128, 128, 128, 0);
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0rem;
+    background: rgba(128, 128, 128, 0.514);
+  }
+}
+
+@keyframes header-scroll-animate-in {
+  0% {
+    opacity: 1;
+    margin-top: -10rem;
+    background: rgba(128, 128, 128, 0);
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0rem;
+    background: rgba(128, 128, 128, 0.514);
+  }
+}
+
+@-webkit-keyframes header-scroll-animate-out {
+  0% {
+    opacity: 1;
+    margin-top: 0rem;
+    background: rgba(128, 128, 128, 0.514);
+  }
+  100% {
+    opacity: 1;
+    margin-top: -10rem;
+    background: rgba(128, 128, 128, 0);
+  }
+}
+
+@keyframes header-scroll-animate-out {
+  0% {
+    opacity: 1;
+    margin-top: 0rem;
+    background: rgba(128, 128, 128, 0.514);
+  }
+  100% {
+    opacity: 1;
+    margin-top: -10rem;
+    background: rgba(128, 128, 128, 0);
+  }
+}
+
+.menu-active {
+  -webkit-animation: menu-active-animation .5s;
+          animation: menu-active-animation .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.menu-not-active {
+  -webkit-animation: menu-active-out 1s;
+          animation: menu-active-out 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes menu-active-animation {
+  0% {
+    opacity: 0;
+    -webkit-clip-path: circle(5% at 93.5% 4rem);
+            clip-path: circle(5% at 93.5% 4rem);
+  }
+  1% {
+    z-index: 10;
+  }
+  100% {
+    opacity: 1;
+    z-index: 10;
+    -webkit-clip-path: circle(75%);
+            clip-path: circle(75%);
+  }
+}
+
+@keyframes menu-active-animation {
+  0% {
+    opacity: 0;
+    -webkit-clip-path: circle(5% at 93.5% 4rem);
+            clip-path: circle(5% at 93.5% 4rem);
+  }
+  1% {
+    z-index: 10;
+  }
+  100% {
+    opacity: 1;
+    z-index: 10;
+    -webkit-clip-path: circle(75%);
+            clip-path: circle(75%);
+  }
+}
+
+@-webkit-keyframes menu-active-out {
+  0% {
+    opacity: 1;
+    z-index: 10;
+    -webkit-clip-path: circle(75%);
+            clip-path: circle(75%);
+  }
+  40% {
+    opacity: 0;
+    -webkit-clip-path: circle(5% at 93.5% 4rem);
+            clip-path: circle(5% at 93.5% 4rem);
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+
+@keyframes menu-active-out {
+  0% {
+    opacity: 1;
+    z-index: 10;
+    -webkit-clip-path: circle(75%);
+            clip-path: circle(75%);
+  }
+  40% {
+    opacity: 0;
+    -webkit-clip-path: circle(5% at 93.5% 4rem);
+            clip-path: circle(5% at 93.5% 4rem);
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+
+.description-active {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.description-not-active {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Bitter', serif;
+}
+
+html li {
+  list-style-type: none;
+}
+
+html a {
+  text-decoration: none;
+}
+
+.web-container {
+  position: relative;
+  width: 100%;
+  background: rgba(58, 58, 58, 0.13);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.another-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  min-height: 70rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(72, 148, 247, 0.92)), to(rgba(22, 70, 78, 0.92)));
+  background: linear-gradient(to right, rgba(72, 148, 247, 0.92), rgba(22, 70, 78, 0.92));
+  z-index: -2;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.another-menu .content {
+  width: 120rem;
+  height: 80%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+
+.another-menu .content .sub-menu-container {
+  width: 60%;
+  height: 80%;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.another-menu .content .sub-menu-container ul {
+  width: 50rem;
+  height: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.another-menu .content .sub-menu-container ul li {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto;
+  border-radius: 5%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 1rem 1rem 4rem -2rem;
+          box-shadow: 1rem 1rem 4rem -2rem;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.another-menu .content .sub-menu-container ul li .icon {
+  width: 6rem;
+  height: 6rem;
+  margin-bottom: 2rem;
+}
+
+.another-menu .content .sub-menu-container ul li:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 1rem 1rem 4rem -1rem;
+          box-shadow: 1rem 1rem 4rem -1rem;
+}
+
+.another-menu .content .icon-close {
+  position: absolute;
+  top: -8%;
+  right: 0;
+}
+
+.another-menu .content .icon-close:hover {
+  cursor: pointer;
+}
+
+.another-menu .content .icon-close .icon {
+  width: 3rem;
+  height: 3rem;
+  color: white;
+}
+
+.company-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  min-height: 70rem;
+  background: rgba(0, 0, 0, 0.671);
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.company-container .content-container {
+  position: relative;
+  z-index: 6;
+  width: 60rem;
+  background: rgba(0, 0, 0, 0.959);
+  border: 1px solid rgba(121, 120, 120, 0.637);
+}
+
+.company-container .content-container:hover {
+  cursor: context-menu;
+}
+
+.company-container .content-container .image {
+  margin-top: 2rem;
+}
+
+.company-container .content-container .company-icon-close {
+  position: absolute;
+  right: 2%;
+  top: 3%;
+}
+
+.company-container .content-container .company-icon-close:hover {
+  cursor: pointer;
+}
+
+.company-container .content-container .company-icon-close .icon {
+  width: 3rem;
+  height: 3rem;
+  color: white;
+}
+
+.company-container .content-container .content-indonesia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.company-container .content-container .content-indonesia .image {
+  width: 42rem;
+  height: 30rem;
+  background: url("../pict/company/indonesia.jpg") no-repeat;
+  background-size: contain;
+}
+
+.company-container .content-container .content-indonesia .description {
+  margin-left: 2rem;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.company-container .content-container .content-indonesia .description .comp-desc {
+  margin-bottom: 1.6rem;
+}
+
+.company-container .content-container .content-indonesia .description h3 {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+}
+
+.company-container .content-container .content-indonesia .description span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.company-container .content-container .content-singapore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.company-container .content-container .content-singapore .image {
+  width: 42rem;
+  height: 30rem;
+  background: url("../pict/company/singapore.jpg") no-repeat;
+  background-size: contain;
+}
+
+.company-container .content-container .content-singapore .description {
+  margin-left: 2rem;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.company-container .content-container .content-singapore .description .comp-desc {
+  margin-bottom: 1.6rem;
+}
+
+.company-container .content-container .content-singapore .description h1 {
+  line-height: 3.4rem;
+  margin-bottom: 2rem;
+}
+
+.company-container .content-container .content-singapore .description h3 {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+}
+
+.company-container .content-container .content-singapore .description span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.company-container .content-container .content-thailand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.company-container .content-container .content-thailand .image {
+  width: 42rem;
+  height: 30rem;
+  background: url("../pict/company/thailand.png") no-repeat;
+  background-size: contain;
+}
+
+.company-container .content-container .content-thailand .description {
+  margin-left: 2rem;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.company-container .content-container .content-thailand .description .comp-desc {
+  margin-bottom: 1.6rem;
+}
+
+.company-container .content-container .content-thailand .description h1 {
+  line-height: 3.4rem;
+  margin-bottom: .5rem;
+}
+
+.company-container .content-container .content-thailand .description h3 {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+}
+
+.company-container .content-container .content-thailand .description span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.company-container .content-container .content-malaysia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.company-container .content-container .content-malaysia .image {
+  width: 42rem;
+  height: 30rem;
+  background: url("../pict/company/malaysia.jpg") no-repeat;
+  background-size: contain;
+}
+
+.company-container .content-container .content-malaysia .description {
+  margin-left: 2rem;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.company-container .content-container .content-malaysia .description .comp-desc {
+  margin-bottom: 1.6rem;
+}
+
+.company-container .content-container .content-malaysia .description h1 {
+  line-height: 3.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.company-container .content-container .content-malaysia .description h3 {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+}
+
+.company-container .content-container .content-malaysia .description span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.company-container .content-container .content-newzealand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.company-container .content-container .content-newzealand .image {
+  width: 42rem;
+  height: 30rem;
+  background: url("../pict/company/malaysia.jpg") no-repeat;
+  background-size: contain;
+}
+
+.company-container .content-container .content-newzealand .description {
+  margin-left: -10rem;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.company-container .content-container .content-newzealand .description .comp-desc {
+  margin-bottom: 1.6rem;
+}
+
+.company-container .content-container .content-newzealand .description h1 {
+  line-height: 3.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.company-container .content-container .content-newzealand .description h3 {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+}
+
+.company-container .content-container .content-newzealand .description span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.company-container .content-container .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.company-container .content-container .not-active {
+  display: none;
+}
+
+.header-container {
+  position: fixed;
+  width: 100%;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  z-index: 2;
+}
+
+.header-container header {
+  width: 120rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-container header .header-wirecard-logo {
+  margin-top: -1rem;
+  width: 20%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container header .header-wirecard-logo .logo {
+  width: 100%;
+  height: 50%;
+  background: url("../pict/wirecard-logo.png") no-repeat;
+  background-size: contain;
+}
+
+.header-container header .header-text {
+  width: 15%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-container header .header-text > * {
+  background: none;
+  border-radius: 5px;
+}
+
+.header-container header .header-text .text-box {
+  width: 85%;
+  height: 100%;
+}
+
+.header-container header .header-text button {
+  height: 100%;
+  width: 15%;
+}
+
+.header-container header .header-menu {
+  width: 30%;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container header .header-menu ul {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-container header .header-menu ul li:hover {
+  cursor: pointer;
+  color: #f0efef;
+}
+
+.header-container header .header-menu .header-icon:hover {
+  cursor: pointer;
+  color: #f0efef;
+}
+
+.header-container header .header-menu .icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.main-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 70rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.514)), to(rgba(0, 0, 0, 0.507))), url("../pict/asia_company.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.507)), url("../pict/asia_company.jpg");
+  background-size: cover;
+}
+
+.main-banner .about-section {
+  font-size: 4rem;
+  width: 50rem;
+  height: 50rem;
+  position: absolute;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.main-banner .about-section p {
+  font-size: 1.8rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.main-content {
+  position: relative;
+  width: 100%;
+  height: 80rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.main-content .main-content-header {
+  width: 120rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+}
+
+.main-content .main-content-header .asia-pacific {
+  color: red;
+}
+
+.main-content .main-content-header div {
+  width: 120rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content .main-content-header div:hover {
+  cursor: pointer;
+}
+
+.main-content .coursel-description {
+  margin-top: 10rem;
+  width: 120rem;
+  height: 50rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  font-size: 2rem;
+  overflow: visible;
+}
+
+.main-content .coursel-description .coursel-slider {
+  position: relative;
+  width: 80%;
+  height: 50rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-content .coursel-description .coursel-slider .asia,
+.main-content .coursel-description .coursel-slider .world {
+  position: absolute;
+  width: 100rem;
+  max-height: 50rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.main-content .coursel-description .coursel-slider .asia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-content .coursel-description .coursel-slider .asia .main-description {
+  width: 60%;
+}
+
+.main-content .coursel-description .coursel-slider .asia .main-description h1 {
+  margin-bottom: 5rem;
+}
+
+.main-content .coursel-description .coursel-slider .asia .main-description li {
+  margin-bottom: 2rem;
+}
+
+.main-content .coursel-description .coursel-slider .asia .main-description li .icon {
+  color: green;
+}
+
+.main-content .coursel-description .coursel-slider .asia .main-description li span {
+  margin-left: 4rem;
+}
+
+.main-content .coursel-description .coursel-slider .asia .picture-description {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content .coursel-description .coursel-slider .asia .picture-description .picture-container {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  background: url("../pict/singapore.jpg") no-repeat;
+  border-radius: 5%;
+  background-size: cover;
+  background-position: center;
+  background-position-x: -10rem;
+}
+
+.main-content .coursel-description .coursel-slider .asia .picture-description .picture-container .image-unique-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35rem;
+  height: 35rem;
+  z-index: -1;
+  border: 2px solid rgba(0, 0, 255, 0.164);
+  border-radius: 8%;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+          transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+
+.main-content .coursel-description .coursel-slider .asia .picture-description .picture-container .image-unique-wrapper-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 45rem;
+  height: 45rem;
+  z-index: -1;
+  border: 2px solid rgba(0, 0, 255, 0.288);
+  border-radius: 8%;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(30deg);
+          transform: translateX(-50%) translateY(-50%) rotate(30deg);
+}
+
+.main-content .coursel-description .coursel-slider .world {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-content .coursel-description .coursel-slider .world .main-description {
+  width: 60%;
+}
+
+.main-content .coursel-description .coursel-slider .world .main-description h1 {
+  margin-bottom: 5rem;
+}
+
+.main-content .coursel-description .coursel-slider .world .main-description li {
+  margin-bottom: 2rem;
+}
+
+.main-content .coursel-description .coursel-slider .world .main-description li .icon {
+  color: green;
+}
+
+.main-content .coursel-description .coursel-slider .world .main-description li span {
+  margin-left: 4rem;
+}
+
+.main-content .coursel-description .coursel-slider .world .picture-description {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content .coursel-description .coursel-slider .world .picture-description .picture-container {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  background: url("../pict/word-wide.jpg") no-repeat;
+  border-radius: 5%;
+  background-size: cover;
+  background-position: center;
+  background-position-x: -10rem;
+}
+
+.main-content .coursel-description .coursel-slider .world .picture-description .picture-container .image-unique-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35rem;
+  height: 35rem;
+  z-index: -1;
+  border: 2px solid rgba(0, 0, 255, 0.288);
+  border-radius: 8%;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+          transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+
+.main-content .coursel-description .coursel-slider .world .picture-description .picture-container .image-unique-wrapper-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 45rem;
+  height: 45rem;
+  z-index: -1;
+  border: 2px solid rgba(0, 0, 255, 0.164);
+  border-radius: 8%;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(30deg);
+          transform: translateX(-50%) translateY(-50%) rotate(30deg);
+}
+
+.company-branch {
+  width: 100%;
+  height: 50rem;
+}
+
+.company-branch .content-container {
+  width: 120rem;
+  height: 50rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.company-branch .content-container h1 {
+  font-size: 3rem;
+}
+
+.company-branch .content-container .companies {
+  width: 75%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin: 4rem 0;
+}
+
+.company-branch .content-container .companies .image {
+  background-size: cover;
+}
+
+.company-branch .content-container .companies li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: .4rem .4rem 4rem -3rem;
+          box-shadow: .4rem .4rem 4rem -3rem;
+  border-radius: 5%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.company-branch .content-container .companies li span {
+  margin: 2rem 0 0 2rem;
+}
+
+.company-branch .content-container .companies li:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 1rem 1rem 5rem -2rem;
+          box-shadow: 1rem 1rem 5rem -2rem;
+}
+
+.company-branch .content-container .companies__singapore {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../pict/singapore-country.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../pict/singapore-country.jpg");
+}
+
+.company-branch .content-container .companies__singapore:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../pict/singapore-country.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../pict/singapore-country.jpg");
+  background-size: cover;
+  color: black;
+}
+
+.company-branch .content-container .companies__indonesia {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../pict/indonesia-monas.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../pict/indonesia-monas.jpg");
+}
+
+.company-branch .content-container .companies__indonesia:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../pict/indonesia-monas.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../pict/indonesia-monas.jpg");
+  background-size: cover;
+  color: black;
+}
+
+.company-branch .content-container .companies__malaysia {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../pict/malaysia twin tower.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../pict/malaysia twin tower.jpg");
+}
+
+.company-branch .content-container .companies__malaysia:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../pict/malaysia twin tower.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../pict/malaysia twin tower.jpg");
+  background-size: cover;
+  color: black;
+}
+
+.company-branch .content-container .companies__thailand {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../pict/thailand-countrysign.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../pict/thailand-countrysign.jpg");
+}
+
+.company-branch .content-container .companies__thailand:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../pict/thailand-countrysign.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../pict/thailand-countrysign.jpg");
+  background-size: cover;
+  color: black;
+}
+
+.company-branch .content-container .companies__newzealand {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../pict/new zealand sunset.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../pict/new zealand sunset.jpg");
+}
+
+.company-branch .content-container .companies__newzealand:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../pict/new zealand sunset.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../pict/new zealand sunset.jpg");
+  background-size: cover;
+  color: black;
+}
+
+footer {
+  width: 100%;
+  height: 20rem;
+  background: rgba(0, 0, 0, 0.712);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copyright {
+  width: 120rem;
+  height: 80%;
+  font-size: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+footer .copyright a {
+  color: white;
+}
+
+footer .copyright a:hover {
+  color: #ececec;
+}
+/*# sourceMappingURL=style.css.map */

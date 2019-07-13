@@ -1,0 +1,162 @@
+.main-banner {
+    animation: banner-in 1s;
+    animation-fill-mode: forwards;
+}
+
+.header-container {
+    opacity: 0;
+    animation: header-animate-in 1.4s;
+    animation-delay: .1s;
+    animation-fill-mode: forwards;
+}
+
+.about-section {
+
+    h1 {
+        opacity: 0;
+        animation: about-section-h1-in 1.4s;
+        animation-delay: .7s;
+        animation-fill-mode: forwards;
+    }
+
+    p {
+        opacity: 0;
+        animation: about-section-h1-in 2.4s;
+        animation-delay: .7s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes banner-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes header-animate-in {
+    0% {
+        opacity: 0;
+        margin-top: -10rem;
+    }
+
+    60% {
+        opacity: 1;
+        margin-top: 0rem;
+        background: rgba(128, 128, 128, 0);
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0rem;
+        background: rgba(128, 128, 128, 0.514);
+    }
+}
+
+@keyframes about-section-h1-in {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.header-scroll-in {
+    animation: header-scroll-animate-in 1s;
+    animation-fill-mode: forwards;
+}
+
+.header-scroll-out {
+    animation: header-scroll-animate-out 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes header-scroll-animate-in {
+    0% {
+        opacity: 1;
+        margin-top: -10rem;
+        background: rgba(128, 128, 128, 0);
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0rem;
+        background: rgba(128, 128, 128, 0.514);
+    }
+}
+
+@keyframes header-scroll-animate-out {
+    0% {
+        opacity: 1;
+        margin-top: 0rem;
+        background: rgba(128, 128, 128, 0.514);
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: -10rem;
+        background: rgba(128, 128, 128, 0);
+    }
+
+
+}
+
+.menu-active {
+    animation: menu-active-animation .5s;
+    animation-fill-mode: forwards;
+}
+
+.menu-not-active {
+    animation: menu-active-out 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes menu-active-animation {
+    0% {
+        opacity: 0;
+        clip-path: circle(5% at 93.5% 4rem);
+    }
+
+    1% {
+        z-index: 10;
+    }
+
+    100% {
+        opacity: 1;
+        z-index: 10;
+        clip-path: circle(75%);
+    }
+}
+
+@keyframes menu-active-out {
+    0% {
+        opacity: 1;
+        z-index: 10;
+        clip-path: circle(75%);
+    }
+
+    40% {
+        opacity: 0;
+        clip-path: circle(5% at 93.5% 4rem);
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -2;
+    }
+}
+
+.description-active {
+    transform: rotateY(0deg);
+}
+
+.description-not-active {
+    transform: rotateY(180deg);
+}
